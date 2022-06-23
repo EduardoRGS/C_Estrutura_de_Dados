@@ -16,6 +16,8 @@ float media(int n1,int n2){
     
 }
 
+void troca(int *p1, int *p2)
+
 void main() // função main
 {
     int nota1, nota2; // variaveis nota 1 e nota 2.
@@ -56,5 +58,37 @@ void main() // função main
     *ptr = 20; // atribuindo o valor 20 no, ele altera o valor indiretamente da variavel var por causa do local da memoria
     printf("Variavel var: %d, Valor de ptr: %p e Conteudo da variavel prt: %d", var, ptr, *ptr);  // printf valor da variaval var e do ponteiro
 
+    /*
+    por valor      = nossa função receberá os valores e
+                 manipulá-los não interfere no conteúdo das variáveis originais.
 
+    por referência = temos a referência daquela variável e, dessa forma,
+                 alteramos o valor original da variável.
+    */
+
+   // Exercicio troca os valores das variaveis ultizando uma função e ponteiros.
+    int n1 = 10, n2 = 20; // declaração das variaveis
+    
+    troca(&n1, &n2);// passando o endereço do valor das varivaeis por meio do &
+    
+    printf("n1 = %d n2 = %d",n1,n2);
+    
+
+    return 0;
+   
+
+}
+
+// Com o endereço das variaveis sendo passadas para dois parametros que serão dois ponteiros
+// ultilizaremos uma variavek auxilia para trocar os valores dessa variaveis
+// ultizando aux = *p1, para guardarmos o valor de *p1 na variavel aux.
+// *p1 = *p2 alteramos o valor original de *p1 por referencia.
+// e com o valor de *p1 guardado no varivel aux passoa esse valor para *p2
+// e assim conseguimos trocar os valores das variaveis. 
+
+void troca(int *p1, int *p2){
+    int aux;
+    aux = *p1;
+    *p1 = *p2;
+    *p2 = aux;
 }
