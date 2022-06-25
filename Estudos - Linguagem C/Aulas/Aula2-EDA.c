@@ -9,12 +9,12 @@ int main()
 {
     int n,m,x,a; // declaração de variaveis
     
-    n = 10; // atribuuindo valor 10 para a variavel n;
+    n = 10; // atribuindo valor 10 para a variavel n;
     m = ++n; // incrementando valor patra a variavel m;
     printf("\n N = %d, M = %d", n, m); // printando o valor das variaveis 
     
     a = 10; // atribuindo valor para a vairavel a;
-    x = a++; // incrementando valor pafra a variavel x;
+    x = a++; // incrementando valor para a variavel x;
     
     printf("\n A = %d, X = %d", a, x); // printando o valor das variaveis
     

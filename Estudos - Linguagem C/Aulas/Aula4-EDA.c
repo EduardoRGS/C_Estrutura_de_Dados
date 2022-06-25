@@ -33,13 +33,13 @@ main( )
   fOriginal = fopen ("Arquivo1.txt", "r" );
   if (fOriginal == NULL )
   {
-    puts ( "N�o foi possivel abrir o arquivo!!!" ) ;
+    puts ( "Nao foi possivel abrir o arquivo!!!" ) ;
     exit(0) ;
   }
   fCopia = fopen ("Copia_Arquivo1.txt", "w" );
   if (fCopia == NULL )
   {
-    puts ( "N�o foi possivel gravar o arquivo!!!" ) ;
+    puts ( "Nao foi possivel gravar o arquivo!!!" ) ;
   }
   while ( 1 )
   {

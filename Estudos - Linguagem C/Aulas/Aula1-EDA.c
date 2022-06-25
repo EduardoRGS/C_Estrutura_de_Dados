@@ -1,9 +1,8 @@
 // Estrutura básica C
-// 
 
 #include <stdio.h>// Biblioteca para usar funçoes de entrada e saida (I/O)
 #include <stdlib.h> // Biblioteca de funções de uso genérico
-// Não é necessario incluir essas bibliotecas base, por conta do proprio vc code incluir elas ao executar o codigo.
+// Não é necessario incluir essas bibliotecas base, por conta do proprio vs-code code incluir elas ao executar o codigo.
 
 // Estudar cada função dessas bilbiotecas
 // •	 stdio.h ->Funções de entrada e saída (I/O) - Prioridade l
@@ -41,7 +40,7 @@ void main() {
 
 
     printf("Valor da variavel num: %d\n", num); //Para imprimir o valor da vairavel inteiras %d, %f se for float %lf se for double.
-    printf("Valor da variavel numQuenrado: %0.2f\n", numQuebrado); //Para imprimir o valor de variavel tipo float %f
+    printf("Valor da variavel numQuebrado: %0.2f\n", numQuebrado); //Para imprimir o valor de variavel tipo float %f
     printf("Digite o valor a ser atribuido a variavel num: "); 
     scanf("%d", &num); // O & busca o endereço onde foi armazenado na memoria do computador a varivavel num e aramzenda o valor
     // digitado dentro dela. num = "numero inteiro digitado"
@@ -51,7 +50,7 @@ void main() {
     scanf("%s", nome); // %s porque o char foi delcarado como um vetor, se ele é declarado como vetor vira um tipo string.
     // Não é necessario ultilizar o & porque o nome do vetor já é um ponteiro e ele já tem um endereço de memoria.
     printf("Seu nome eh: %s", nome);
-    getch(); // getch()  é tipo em envento que capta cada vez que o usuario digita
+   // getch(); // getch()  é tipo em envento que capta cada vez que o usuario digita
 
     
 
